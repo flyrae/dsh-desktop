@@ -1,1 +1,84 @@
-"# DeepSeek Harness Desktop\n\nDeepSeek Harness \u7684 Windows \u684c\u9762\u5ba2\u6237\u7aef\uff0c\u57fa\u4e8e [Tauri](https://tauri.app) \u6784\u5efa\u3002\n\n## \u2728 \u529f\u80fd\n\n- \ud83d\udda5\ufe0f **\u539f\u751f\u684c\u9762\u4f53\u9a8c** \u2014 Tauri v2 + WebView2\uff0c\u8f7b\u91cf\u539f\u751f\u7a97\u53e3\n- \ud83d\udd0c **\u5b8c\u5168\u79bb\u7ebf\u8fd0\u884c** \u2014 \u5185\u7f6e Node 24 \u8fd0\u884c\u65f6\u548c\u5b8c\u6574 dsh \u8fd0\u884c\u65f6\uff0c\u65e0\u9700\u9884\u88c5 Node \u6216\u4efb\u4f55\u4f9d\u8d56\n- \ud83d\udccc **\u7cfb\u7edf\u6258\u76d8** \u2014 \u5173\u95ed\u7a97\u53e3\u65f6\u53ef\u9009\u62e9\u6700\u5c0f\u5316\u5230\u7cfb\u7edf\u6258\u76d8\uff08\u540e\u53f0\u8fd0\u884c\uff09\u6216\u76f4\u63a5\u9000\u51fa\n- \ud83e\udd16 **DeepSeek AI \u9a71\u52a8** \u2014 \u5185\u7f6e DeepSeek Harness \u5168\u90e8\u80fd\u529b\uff08Agent\u3001\u5de5\u5177\u3001\u4f1a\u8bdd\u7ba1\u7406\uff09\n- \ud83d\udc33 **DeepSeek \u54c1\u724c\u8bbe\u8ba1** \u2014 \u9cb8\u9c7c Logo\n\n## \ud83d\udce5 \u4e0b\u8f7d\u5b89\u88c5\n\n### \u65b9\u5f0f\u4e00\uff1a\u76f4\u63a5\u4e0b\u8f7d\u5b89\u88c5\u5305\uff08\u63a8\u8350\uff09\n\n1. \u524d\u5f80 [Releases \u9875\u9762](https://github.com/flyrae/dsh-desktop/releases)\n2. \u4e0b\u8f7d\u6700\u65b0\u7248\u7684 `DeepSeek-Harness_x.x.x_x64-setup.exe`\n3. \u53cc\u51fb\u8fd0\u884c\u5b89\u88c5\n\n### \u7cfb\u7edf\u8981\u6c42\n\n| \u8981\u6c42 | \u8bf4\u660e |\n|------|------|\n| \u64cd\u4f5c\u7cfb\u7edf | Windows 10 / 11 (x64) |\n| WebView2 | Win10/11 \u81ea\u5e26\uff0c\u5b89\u88c5\u5305\u4f1a\u81ea\u52a8\u5f15\u5bfc\u5b89\u88c5 |\n| \u78c1\u76d8\u7a7a\u95f4 | ~500MB\uff08\u5b89\u88c5\u5305 170MB + \u8fd0\u884c\u65f6\u89e3\u538b\uff09 |\n| \u7f51\u7edc | \u4ec5\u9996\u6b21\u542f\u52a8\u9700\u8981\u8054\u7f51\u6fc0\u6d3b\uff0c\u4e4b\u540e\u53ef\u79bb\u7ebf\u4f7f\u7528 |\n\n## \ud83d\ude80 \u4f7f\u7528\n\n1. \u5b89\u88c5\u5b8c\u6210\u540e\u4ece\u5f00\u59cb\u83dc\u5355\u6216\u684c\u9762\u5feb\u6377\u65b9\u5f0f\u542f\u52a8\n2. \u9996\u6b21\u542f\u52a8\u4f1a\u81ea\u52a8\u89e3\u538b\u8fd0\u884c\u65f6\uff08\u7ea6 10-15 \u79d2\uff09\uff0c\u4e4b\u540e\u542f\u52a8\u79d2\u5f00\n3. \u5728\u8bbe\u7f6e\u4e2d\u586b\u5165\u4f60\u7684 DeepSeek API Key \u5373\u53ef\u5f00\u59cb\u5bf9\u8bdd\n\n### \u7cfb\u7edf\u6258\u76d8\n\n- **\u5173\u95ed\u7a97\u53e3** \u2192 \u5f39\u51fa\u9009\u62e9\uff1a\u70b9\"\u662f\"\u6700\u5c0f\u5316\u5230\u6258\u76d8\uff0c\u70b9\"\u5426\"\u5b8c\u5168\u9000\u51fa\n- **\u5de6\u952e\u70b9\u51fb\u6258\u76d8\u56fe\u6807** \u2192 \u6062\u590d\u7a97\u53e3\n- **\u53f3\u952e\u6258\u76d8\u56fe\u6807** \u2192 \u83dc\u5355\uff1a\u663e\u793a\u7a97\u53e3 / \u9000\u51fa\n\n## \ud83d\udd28 \u4ece\u6e90\u7801\u6784\u5efa\n\n```sh\ngit clone https://github.com/flyrae/dsh-desktop.git\ncd dsh-desktop\n\n# 1. \u5b89\u88c5\u4f9d\u8d56\npnpm install\n\n# 2. \u4e0b\u8f7d Node 24 \u4e8c\u8fdb\u5236\uff08\u6784\u5efa\u5b89\u88c5\u5305\u9700\u8981\uff09\npnpm run desktop:fetch-node\n\n# 3. \u6253\u5305 dsh \u8fd0\u884c\u65f6\npnpm run build\npnpm run desktop:build-runtime\n\n# 4. \u6784\u5efa NSIS \u5b89\u88c5\u5305\ncd apps/desktop/src-tauri\ncargo tauri build\n```\n\n\u5b89\u88c5\u5305\u8f93\u51fa\u5728 `apps/desktop/src-tauri/target/release/bundle/nsis/`\u3002\n\n## \ud83d\udcc1 \u9879\u76ee\u7ed3\u6784\n\n```\napps/desktop/\n\u251c\u2500\u2500 src-tauri/          Tauri Rust \u5de5\u7a0b\n\u2502   \u251c\u2500\u2500 src/\n\u2502   \u2502   \u251c\u2500\u2500 main.rs     \u5165\u53e3\uff1a\u6258\u76d8\u3001\u7a97\u53e3\u3001IPC\n\u2502   \u2502   \u2514\u2500\u2500 spawn.rs    Node \u5b50\u8fdb\u7a0b\u7ba1\u7406\n\u2502   \u251c\u2500\u2500 tauri.conf.json Tauri \u914d\u7f6e\n\u2502   \u2514\u2500\u2500 icons/          \u5e94\u7528\u56fe\u6807\n\u251c\u2500\u2500 desktop-runtime/    \u95ed\u5305\u6e05\u5355\uff08\u5b9a\u4e49\u6253\u5305\u54ea\u4e9b dsh \u5305\uff09\n\u2514\u2500\u2500 package.json\nscripts/\n\u251c\u2500\u2500 fetch-node-for-desktop.ts    \u4e0b\u8f7d Node \u4e8c\u8fdb\u5236\n\u2514\u2500\u2500 build-desktop-runtime.ts     \u6253\u5305\u8fd0\u884c\u65f6\u95ed\u5305\n```\n\n## \ud83d\udcc4 License\n\nMIT\n"
+# DeepSeek Harness Desktop
+
+DeepSeek Harness 的 Windows 桌面客户端，基于 [Tauri](https://tauri.app) 构建。
+
+## ✨ 功能
+
+- 🖥️ **原生桌面体验** — Tauri v2 + WebView2，轻量原生窗口
+- 🔌 **完全离线运行** — 内置 Node 24 运行时和完整 dsh 运行时，无需预装 Node 或任何依赖
+- 📌 **系统托盘** — 关闭窗口时可选择最小化到系统托盘（后台运行）或直接退出
+- 🤖 **DeepSeek AI 驱动** — 内置 DeepSeek Harness 全部能力（Agent、工具、会话管理）
+- 🐳 **DeepSeek 品牌设计** — 鲸鱼 Logo
+
+## 📥 下载安装
+
+### 方式一：直接下载安装包（推荐）
+
+1. 前往 [Releases 页面](https://github.com/flyrae/dsh-desktop/releases)
+2. 下载最新版的 `DeepSeek-Harness_x.x.x_x64-setup.exe`
+3. 双击运行安装
+
+### 系统要求
+
+| 要求 | 说明 |
+|------|------|
+| 操作系统 | Windows 10 / 11 (x64) |
+| WebView2 | Win10/11 自带，安装包会自动引导安装 |
+| 磁盘空间 | ~500MB（安装包 170MB + 运行时解压） |
+| 网络 | 仅首次启动需要联网激活，之后可离线使用 |
+
+## 🚀 使用
+
+1. 安装完成后从开始菜单或桌面快捷方式启动
+2. 首次启动会自动解压运行时（约 10-15 秒），之后启动秒开
+3. 在设置中填入你的 DeepSeek API Key 即可开始对话
+
+### 系统托盘
+
+- **关闭窗口** → 弹出选择：点"是"最小化到托盘，点"否"完全退出
+- **左键点击托盘图标** → 恢复窗口
+- **右键托盘图标** → 菜单：显示窗口 / 退出
+
+## 🔨 从源码构建
+
+```sh
+git clone https://github.com/flyrae/dsh-desktop.git
+cd dsh-desktop
+
+# 1. 安装依赖
+pnpm install
+
+# 2. 下载 Node 24 二进制（构建安装包需要）
+pnpm run desktop:fetch-node
+
+# 3. 打包 dsh 运行时
+pnpm run build
+pnpm run desktop:build-runtime
+
+# 4. 构建 NSIS 安装包
+cd apps/desktop/src-tauri
+cargo tauri build
+```
+
+安装包输出在 `apps/desktop/src-tauri/target/release/bundle/nsis/`。
+
+## 📁 项目结构
+
+```
+apps/desktop/
+├── src-tauri/          Tauri Rust 工程
+│   ├── src/
+│   │   ├── main.rs     入口：托盘、窗口、IPC
+│   │   └── spawn.rs    Node 子进程管理
+│   ├── tauri.conf.json Tauri 配置
+│   └── icons/          应用图标
+├── desktop-runtime/    闭包清单（定义打包哪些 dsh 包）
+└── package.json
+scripts/
+├── fetch-node-for-desktop.ts    下载 Node 二进制
+└── build-desktop-runtime.ts     打包运行时闭包
+```
+
+## 📄 License
+
+MIT
