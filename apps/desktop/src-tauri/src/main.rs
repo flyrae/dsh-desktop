@@ -120,18 +120,18 @@ fn main() {
                 api.prevent_close();
 
                 app.dialog()
-                    .message("点击\"确定\"最小化到系统托盘，点击\"取消\"完全退出。")
+                    .message("点击\"是\"最小化到系统托盘（后台运行），点击\"否\"直接退出。")
                     .kind(MessageDialogKind::Info)
-                    .title("DeepSeek Harness - 关闭窗口")
-                    .buttons(MessageDialogButtons::OkCancel)
-                    .show(move |ok| {
-                        if ok {
-                            // Ok = minimize to tray
+                    .title("DeepSeek Harness")
+                    .buttons(MessageDialogButtons::YesNo)
+                    .show(move |yes| {
+                        if yes {
+                            // Yes = minimize to tray
                             if let Some(win) = app.get_webview_window("main") {
                                 let _ = win.hide();
                             }
                         } else {
-                            // Cancel = quit
+                            // No = quit
                             quit_app(&app);
                         }
                     });
