@@ -45,6 +45,23 @@ packages/    @deepseek-ai/dsh-<pkg> workspaces at packages/<group>/<pkg>/
   examples/    demo bundles (agent-spine + CLI/ACP/JSON-RPC bins)
   support/     dev/test infrastructure
   util/        zero-dependency utilities
+  attachment/    durable immutable attachment storage seam
+  client/       web shell kernel: module system, seed table, two-stage boot, app-shell assembly + UI packages
+  code-runtime/ abstract code-execution seam (ctx.codeRuntime) + worker-thread provider
+  extensions/   dual-half model-mounted packages: registry, host-sandbox lifecycle, cordis runners, tool + ui
+  feedback/     per-message rating + note sidecar and command-feedback lifecycle
+  goal/         event-sourced same-session goal state, lifecycle, rounds, and goal tool
+  host/         host-side webserver, apiproxy, directory pickers, frontend-static, plugin inventory
+  jobs/         background job registry (ctx.jobs): shared ids, owner isolation, polling, cancellation + local provider
+  mcp/          MCP client bridge: connects to MCP servers, registers their tools on ctx.tools
+  runtime-diagnostics/  package-owned runtime invariants registry
+  sandbox/      abstract process-sandbox seam (ctx.sandbox): confinement vocabulary + SandboxProvider contract
+  schedule/     agent-scoped durable after/at/fixed-rate reminders over the session event log
+  session-query/  session query service: reads, traces, filters + sqlite + log export + tool
+  spill/        abstract spill storage seam (ctx.spillStore): save oversized tool text, return locator
+  storage/      storage hub (ctx.storage): named backend registry + data-form facilities (json/sqlite)
+  workspace/    workspace entity registry (ctx.workspaceRegistry): durable records + session attachment
+apps/         runnable application entries: cli (profile boot, plugin mgmt, web alias) + web (vite shell build) + desktop (tauri shell)
 python/      Python SDK and bundled runtime (see python/README.md)
 native/      @deepseek-ai/node-addon-landlock-run source of record (see native/README.md)
 examples/    Runnable cordis.yml leaves over packages/examples bundles (see examples/AGENTS.md)

@@ -96,6 +96,8 @@
     "verify-package-readme-limitations": "tsx scripts/verify-package-readme-limitations.ts",
     "verify-node-next-types": "tsx scripts/verify-node-next-types.ts",
     "verify-runtime-closure": "tsx scripts/verify-runtime-closure.ts",
+    "desktop:fetch-node": "tsx scripts/fetch-node-for-desktop.ts",
+    "desktop:build-runtime": "tsx scripts/build-desktop-runtime.ts",
     "verify-vendored-links": "tsx scripts/verify-vendored-links.ts",
     "verify-cordis-config": "tsx scripts/verify-cordis-config.ts",
     "rescope-vendor": "tsx scripts/rescope-vendor.ts",

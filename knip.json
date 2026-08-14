@@ -15,7 +15,8 @@
   ],
   "ignoreWorkspaces": [
     "vendor/*",
-    "python/sdk-runtime"
+    "python/sdk-runtime",
+    "apps/desktop/desktop-runtime"
   ],
   "ignoreDependencies": [
     "@yarnpkg/cli-dist",
@@ -739,6 +740,10 @@
       "ignoreDependencies": [
         "@deepseek-ai/.+"
       ]
+    },
+    "apps/desktop": {
+      "project": [],
+      "entry": []
     },
     "packages/client/modules": {
       "entry": [

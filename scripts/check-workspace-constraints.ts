@@ -56,6 +56,9 @@ const appPackageFiles: Readonly<Record<string, readonly string[]>> = {
   // The Web build emits sourcemaps for browser debugging; publishing them is
   // what the payload policy forbids, so the bundle ships without them.
   '@deepseek-ai/dsh-web-frontend': ['dist', '!dist/**/*.map'],
+  // The desktop shell publishes its Rust Tauri project so consumers can run
+  // `cargo tauri` against the source; the Node-side package has no build step.
+  '@deepseek-ai/dsh-desktop': ['src-tauri'],
 }
 
 /** The subset of package.json fields this constraint check cares about. */

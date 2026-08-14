@@ -1,0 +1,22 @@
+{
+  "name": "@deepseek-ai/dsh-desktop",
+  "description": "Tauri desktop shell: Rust host spawns the dsh Node runtime (web profile); WebView loads the dsh web frontend",
+  "version": "0.1.0-rc.5",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepseek-ai/deepseek-harness.git",
+    "directory": "apps/desktop"
+  },
+  "type": "module",
+  "files": [
+    "src-tauri"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "tauri:dev": "cargo tauri dev",
+    "tauri:build": "cargo tauri build"
+  }
+}
